@@ -19,3 +19,15 @@ for (let fruitCar in fruitCars){
    console.log(arrays[array]);
  };
 };
+
+// Kod 3:
+console.log("Kod 3:");
+let flowers = ['rose', 'tulip', 'lily', 'orchid'];  
+
+function flowerLoop (array) {  
+  for (let i = 0; i < array.length; i++) {        
+    console.log(array[i]);      
+  }    
+}
+
+flowerLoop(flowers);
