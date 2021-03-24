@@ -1,33 +1,26 @@
-// Kod 1:
-console.log("Kod 1:");
-let cars = ['volvo', 'saab', 'bmw', 'tesla'];  
-for (let car in cars){
-  console.log(cars[car]);
+// ------------- Kod 1 -------------
+let cars = ['volvo', 'saab', 'bmw', 'tesla']; 
+
+for (const car in cars){
+  console.log("Kod 1: ", cars[car]);
 }
 
-// Kod 2:
-console.log("Kod 2:");
+// ------------- Kod 2 -------------
+let cars2 = ['volvo', 'saab', 'bmw', 'tesla'];
+let fruits = ['apple', 'banana', 'orange'];
 
-let fruitCars = {
-  "cars": ['volvo', 'saab', 'bmw', 'tesla'],
-  "fruits": ['apple', 'banana', 'orange']
+loopList(cars2);
+loopList(fruits);
+
+function loopList (list){
+  list.forEach(element => console.log("Kod 2: ", element));
 };
 
-for (let fruitCar in fruitCars){
- let arrays = fruitCars[fruitCar];
- for (let array in arrays){
-   console.log(arrays[array]);
- };
-};
-
-// Kod 3:
-console.log("Kod 3:");
+// ------------- Kod 3 -------------
 let flowers = ['rose', 'tulip', 'lily', 'orchid'];  
 
-function flowerLoop (array) {  
-  for (let i = 0; i < array.length; i++) {        
-    console.log(array[i]);      
-  }    
-}
+function logLoop (list){
+  list.forEach(element => console.log("Kod 3: ", element));
+};
 
-flowerLoop(flowers);
+logLoop(flowers);
